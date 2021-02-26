@@ -21,4 +21,8 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/space', [App\Http\Controllers\SpaceController::class, 'index']);
+Route::get('/space', [App\Http\Controllers\SpaceController::class, 'index'])->name('space');
+
+Route::get('/space/create', [App\Http\Controllers\SpaceController::class, 'create'])->name('space.create');
+
+Route::get('/space/store', [App\Http\Controllers\SpaceController::class, 'store'])->name('space.store');
