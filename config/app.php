@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost/codespace/public'),
+    'url' => env('APP_URL', 'http://localhost/codespace/public/'),
 
     'asset_url' => env('ASSET_URL', null),
 
