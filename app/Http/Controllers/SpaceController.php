@@ -98,4 +98,8 @@ class SpaceController extends Controller
         //
     }
 
+    public function browse()
+    {
+        return view('pages.space.browse');
+    }
 }

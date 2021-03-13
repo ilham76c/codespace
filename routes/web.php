@@ -26,3 +26,5 @@ Route::get('/space', [App\Http\Controllers\SpaceController::class, 'index'])->na
 Route::get('/space/create', [App\Http\Controllers\SpaceController::class, 'create'])->name('space.create');
 
 Route::post('/space/store', [App\Http\Controllers\SpaceController::class, 'store'])->name('space.store');
+
+Route::get('/space/browse', [App\Http\Controllers\SpaceController::class, 'browse'])->name('space.browse');
