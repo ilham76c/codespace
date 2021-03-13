@@ -16,9 +16,9 @@
                     <h5 class="card-title">
                         {{ $space->title }}
                         @if ($space->user_id == Auth::user()->id)
-                        <form action="#">
+                        <form action="{{ route('space.destroy', ['id' => $space->id]) }}" method="post">
                             @csrf @method('DELETE')
-                            <button class="btn btn-sm btn-danger">Delete</button>
+                            <button class="btn btn-sm btn-danger float-right" onclick="return confirm('are you sure?')">Delete</button>
                             <a href="{{ route('space.edit', ['id' => $space->id]) }}" class="btn btn-sm btn-info float-right">Edit</a>
                         </form>
                         @endif

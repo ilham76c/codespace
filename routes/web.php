@@ -32,3 +32,5 @@ Route::get('/space/browse', [App\Http\Controllers\SpaceController::class, 'brows
 Route::get('/space/edit/{id}', [App\Http\Controllers\SpaceController::class, 'edit'])->name('space.edit');
 
 Route::put('/space/update/{id}', [App\Http\Controllers\SpaceController::class, 'update'])->name('space.update');
+
+Route::delete('/space/destroy/{id}', [App\Http\Controllers\SpaceController::class, 'destroy'])->name('space.destroy');
