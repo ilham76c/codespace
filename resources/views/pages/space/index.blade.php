@@ -25,7 +25,7 @@
                     </h5>
                     <h6 class="card-subtitle">{{ $space->address }}</h6>
                     <p class="card-text">{{ $space->description }}</p>
-                    <a href="#" class="card-link">
+                    <a href="#" class="card-link" onclick="openDirection({{ $space->latitude }}, {{ $space->longitude }}, {{ $space->id }})">
                         Direction
                     </a>
                 </div>
