@@ -28,3 +28,7 @@ Route::get('/space/create', [App\Http\Controllers\SpaceController::class, 'creat
 Route::post('/space/store', [App\Http\Controllers\SpaceController::class, 'store'])->name('space.store');
 
 Route::get('/space/browse', [App\Http\Controllers\SpaceController::class, 'browse'])->name('space.browse');
+
+Route::get('/space/edit/{id}', [App\Http\Controllers\SpaceController::class, 'edit'])->name('space.edit');
+
+Route::put('/space/update/{id}', [App\Http\Controllers\SpaceController::class, 'update'])->name('space.update');
