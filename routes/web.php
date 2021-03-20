@@ -23,8 +23,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::get('/space', [App\Http\Controllers\SpaceController::class, 'index'])->name('space.index');
 
-Route::get('/space/{id}', [App\Http\Controllers\SpaceController::class, 'show'])->name('space.show');
-
 Route::get('/space/create', [App\Http\Controllers\SpaceController::class, 'create'])->name('space.create');
 
 Route::post('/space/store', [App\Http\Controllers\SpaceController::class, 'store'])->name('space.store');
@@ -36,3 +34,5 @@ Route::get('/space/edit/{id}', [App\Http\Controllers\SpaceController::class, 'ed
 Route::put('/space/update/{id}', [App\Http\Controllers\SpaceController::class, 'update'])->name('space.update');
 
 Route::delete('/space/destroy/{id}', [App\Http\Controllers\SpaceController::class, 'destroy'])->name('space.destroy');
+
+Route::get('/space/{id}', [App\Http\Controllers\SpaceController::class, 'show'])->name('space.show');
